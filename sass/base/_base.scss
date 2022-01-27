@@ -1,6 +1,6 @@
 body{
 
-  background-color: $blue-bg-color;
+  background-color: $just-white;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -11,6 +11,7 @@ body{
   font-family:$font-poppins;
 
 }
+
 button{
     border: none;
     font-weight: 700;
