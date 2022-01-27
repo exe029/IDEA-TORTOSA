@@ -1,0 +1,28 @@
+/*abstracts*/
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+
+/*base*/
+@import "./base/resets";
+@import "./base/base";
+
+
+/*components*/
+@import "./components/nav-bar-desktop";
+@import "./components/nav-bar-mobile";
+@import "./components/hero";
+/*icons*/
+@import "./components/icons";
+/*utilidades*/
+@import "./components/utilities";
+/*Animaciones*/
+@import "./components/animaciones";
+/*medias*/
+@import "./components/medias";    
+
+/*layout*/
+@import "./layout/header";    
+@import "./layout/main";
+@import "./layout/footer";
+

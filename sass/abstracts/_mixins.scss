@@ -1,0 +1,20 @@
+@mixin backgroungImageProperties {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+@mixin  flexRowHVcenter {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin  flexColumnHVcenter {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,17 @@
+footer .icon {
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    border: none;
+  }
+  
+  .icon i {
+    font-size: 1.3rem;
+    transition: all 0.3s ease;  
+  }
+  
+  .icon i:hover {
+    color: black;
+    font-size: 1.8rem; 
+  }

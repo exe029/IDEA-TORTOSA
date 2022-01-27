@@ -1,0 +1,125 @@
+.header{
+  position: relative;
+  grid-area: header;
+  overflow: hidden;
+
+  .header-background{
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      z-index: -1;
+      filter:brightness(60%) contrast(120%);
+      animation: zoom 8s 0s;
+      img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .hero {
+//     @include backgroungImageProperties;
+//     width: 100%;
+//     height: 100vh;
+//     background-image: url("https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+//     grid-area: header;
+//     &-container{
+//       @include flexRowHVcenter;
+//       justify-content: space-between;     
+//       padding:20px;
+//       &__logoImg{
+//         cursor: pointer;
+//         width: 50px;
+//         transition:all 300ms ease 
+//       }
+//     }
+    
+//   }
+  
+//   .hero-container--container__title {
+//     color: $just-white;
+//     font-size: 3.4rem;
+//   }
+  
+//   .hero-container__nav {
+//     height: 80px; 
+//     display: none;
+//     .nav-container__index{
+//       display: flex;
+//       justify-content: space-between;
+//       font-size: 1.5rem;
+//       font-family: "Cinzel", cursive;
+//     }
+//   }
+//   .nav-container__item {
+//     cursor: pointer; 
+//     list-style: none; 
+//     margin-left: 30px;
+//     transition:all 300ms ease;
+//   }
+//   .nav-container__item:hover{
+//     transform: scale(1.1);
+//   }
+  
+//   .nav-container__item a {
+//     text-decoration: none;
+//     color: black;
+//   }
+  
+//   .hero-container__logoImg:hover{
+//     transform: scale(1.5);
+//   }
+  
+//   .menu-icon{
+//     cursor: pointer;
+//   }
+  
+//   .nav-container {
+//     font-size: 2.5rem;
+//     font-family: "Cinzel", serif;
+//     font-family: "Comforter", cursive;
+//     font-family: "Comforter Brush", cursive;
+//   }
+  
+//   .hero-container__info {
+//     @include flexColumnHVcenter;
+//     width: 100%;
+//     text-align: center;
+//     color: white;
+//     font-family: 'Estonia', cursive;
+//     font-family: 'Red Hat Display', sans-serif;
+//     height: 100%;
+//   }
+  
+//   .hero-container__info h1 {
+//     font-size: 3.4rem;
+//   }
+//   .hero-container__info h2 {
+//     font-size: 2.4rem;
+//   }
+  
+  
+  
+  /*hobbies*/
+  
+  /*service*/
+  
+  
+  /*contact*/
+  

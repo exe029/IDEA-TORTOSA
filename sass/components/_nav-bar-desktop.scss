@@ -1,0 +1,35 @@
+.nav-on-desktop{
+    display:none;
+    justify-content:space-between;
+    align-items:center;
+    max-width: 1440px;
+    margin:0 auto;
+    padding:20px;
+
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+
+    &__list{
+        display: flex;
+        gap:60px;
+
+        .nav-desktop-list__item{
+
+            a{
+                font-weight:600;
+                color: #ffffff;
+            }
+        }
+        
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        display:flex;
+    }
+}
+
+.selected-list-item{
+    border-bottom: 3px solid #ffffff;
+}
