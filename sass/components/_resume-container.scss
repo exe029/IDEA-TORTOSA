@@ -1,0 +1,90 @@
+.resume-container{
+    padding: 60px 20px;
+    min-height:100vh;
+    width: 100%;
+
+    .resume-card{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:30px;
+
+        @media screen and (min-width:$breakpoint-desktop){
+            flex-direction: row;
+            max-width: 1024px;
+            margin: 0 auto;
+
+            .resume-card__img{
+                width: 520px;
+            }
+        }
+
+        &__img{
+            width: 100%;
+            max-width: 920px;
+            height:420px;
+            border-radius: 3px;
+            position:relative;
+            transform:translate( 10px, -10px);
+
+            @media screen and (min-width:$breakpoint-tablet) {
+                height: 720px;
+                .resume-card__img::before{
+                    height: 720px; 
+                }
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 3px;   
+            }
+            &::before{
+                content: '';
+                width: 100%;
+                max-width: 920px;
+                height:420px;
+                position: absolute;
+                left: -20px;
+                bottom: -30px;
+                background-image: url('http://innovationplans.com/idesign/daniels/img/dots.png');
+                background-repeat: repeat;
+                z-index: -99;
+            }
+        }
+
+        .resume-card__info{
+            max-width: 920px;
+            margin: 0 auto;
+            .info__text-box{
+
+                h2{ 
+                    font-size: 1.7rem;
+                    font-weight: 700;
+                }
+                h3{
+                    font-size: .9rem;
+                    font-weight:300;
+                    color:$grey-light-color;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    margin-bottom: 20px;
+                }
+                p{
+                    color:$grey-text-color;
+                    span{
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            
+
+        }
+
+    }
+    
+    
+    
+}
