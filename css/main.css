@@ -143,7 +143,11 @@ ul {
         max-width: 1024px;
         margin: 0 auto; }
         .resume-container .resume-card .resume-card__img {
-          width: 520px; } }
+          width: 50%; }
+          .resume-container .resume-card .resume-card__img::before {
+            height: 720px; }
+        .resume-container .resume-card .resume-card__info {
+          width: 50%; } }
     .resume-container .resume-card__img {
       width: 100%;
       max-width: 920px;
@@ -190,6 +194,49 @@ ul {
         .resume-container .resume-card .resume-card__info .info__text-box p span {
           font-weight: 600; }
 
+.primary-button {
+  background-color: #3D2C8D;
+  border-radius: 3px;
+  color: #FFFFFF;
+  box-shadow: 7px 8px 12px -11px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: 7px 8px 12px -11px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 7px 8px 12px -11px rgba(0, 0, 0, 0.69); }
+
+.secondary-button {
+  color: #171717; }
+
+.form-container {
+  width: 100%;
+  padding: 20px;
+  background-color: #FFFFFF;
+  min-height: 100vh;
+  margin: 120px 0; }
+  .form-container h2 {
+    text-align: center; }
+  .form-container__controls {
+    display: flex;
+    justify-content: center; }
+
+.form-container fieldset {
+  border: none;
+  max-width: 920px;
+  margin: 20px auto; }
+
+#nombre, #email, #message-box {
+  display: flex;
+  border: none;
+  background-color: #f4f4f4;
+  padding: 10px 15px;
+  margin: 5px 0 15px 0;
+  width: 100%; }
+
+::placeholder {
+  color: #9e9e9e; }
+
+#message-box {
+  width: 100%;
+  height: 120px; }
+
 /*icons*/
 footer .icon {
   list-style: none;
@@ -208,9 +255,9 @@ footer .icon {
 
 /*utilidades*/
 .box-shadow {
-  box-shadow: 0px -10px 56px -7px rgba(219, 32, 32, 0.65);
-  -webkit-box-shadow: 0px -10px 56px -7px rgba(219, 32, 32, 0.65);
-  -moz-box-shadow: 0px -10px 56px -7px rgba(219, 32, 32, 0.65); }
+  box-shadow: 0px 10px 6px -4px rgba(145, 107, 191, 0.5) inset;
+  -webkit-box-shadow: 0px 10px 6px -4px rgba(145, 107, 191, 0.5) inset;
+  -moz-box-shadow: 0px 10px 6px -4px rgba(145, 107, 191, 0.5) inset; }
 
 .shadow-bottom {
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.43);
@@ -224,17 +271,6 @@ footer .icon {
 
 .min-size-h {
   min-height: calc( 100vh - 160px); }
-
-.primary-button {
-  background-color: #3D2C8D;
-  border-radius: 3px;
-  color: #FFFFFF;
-  box-shadow: 7px 8px 12px -11px rgba(0, 0, 0, 0.69);
-  -webkit-box-shadow: 7px 8px 12px -11px rgba(0, 0, 0, 0.69);
-  -moz-box-shadow: 7px 8px 12px -11px rgba(0, 0, 0, 0.69); }
-
-.secondary-button {
-  color: #171717; }
 
 .mobile-only {
   display: block; }
@@ -309,15 +345,6 @@ footer .icon {
     height: 100%;
     background: none;
     padding: 0; }
-  .form-container {
-    position: absolute;
-    top: calc(50%  - 190px);
-    height: 80%;
-    max-height: 380px;
-    padding: 20px 20px;
-    right: 10%; }
-  .form-container textarea {
-    height: 80px; }
   .hero-container--contact__message {
     position: absolute;
     left: 60px;
@@ -394,7 +421,7 @@ footer .icon {
       font-family: 'Red Hat Display', sans-serif; }
 
 .hero-container--bio__paragraph {
-  color: #FFFFFF;
+  color: black-text-color;
   text-align: center;
   padding: 60px 10px;
   font-size: 1.5rem;
@@ -439,7 +466,7 @@ footer .icon {
   font-family: 'Red Hat Display', sans-serif; }
 
 .service-info {
-  color: #FFFFFF;
+  color: black-text-color;
   text-align: center;
   padding: 60px 10px;
   font-size: 1.2rem;
@@ -447,31 +474,6 @@ footer .icon {
   font-family: 'Red Hat Display', sans-serif; }
 
 /*contact*/
-.hero-container--contact {
-  background-color: rgba(0, 0, 0, 0.829);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 15px;
-  text-align: center;
-  position: relative; }
-  .hero-container--contact__message {
-    max-width: 320px;
-    margin-bottom: 10px;
-    position: absolute;
-    display: inline-block;
-    margin-top: -55%; }
-    .hero-container--contact__message .contact-title {
-      font-size: 2.5rem;
-      font-family: 'Estonia', cursive;
-      font-family: 'Red Hat Display', sans-serif;
-      color: #FFFFFF; }
-    .hero-container--contact__message .contact-paragraph {
-      font-size: 1.5rem;
-      font-family: 'Estonia', cursive;
-      font-family: 'Red Hat Display', sans-serif;
-      color: #FFFFFF; }
-
 .bg-img-container {
   width: 100%;
   position: relative; }
@@ -490,34 +492,6 @@ footer .icon {
   top: 0;
   left: 0;
   background-color: rgba(86, 37, 40, 0.5); }
-
-.form-container {
-  width: 350px;
-  padding: 20px;
-  background-color: #dee2e6;
-  border-radius: 20px;
-  box-shadow: 7px 8px 12px -11px rgba(0, 0, 0, 0.69);
-  -webkit-box-shadow: 7px 8px 12px -11px rgba(0, 0, 0, 0.69);
-  -moz-box-shadow: 7px 8px 12px -11px rgba(0, 0, 0, 0.69);
-  max-height: 365px; }
-
-.form-container fieldset {
-  border: none; }
-
-#nombre, #email {
-  display: flex;
-  border: none;
-  padding: 10px 5px;
-  border-bottom: 1px solid black;
-  margin: 5px 0 15px 0;
-  width: 100%; }
-
-::placeholder {
-  color: red; }
-
-#message-box {
-  width: 100%;
-  height: 80px; }
 
 .container-footer {
   grid-area: footer;

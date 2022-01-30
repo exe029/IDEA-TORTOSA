@@ -1,0 +1,12 @@
+.primary-button{
+    background-color: $blue-primary-color;
+    border-radius:3px;
+    color: $just-white;
+    box-shadow: 7px 8px 12px -11px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 7px 8px 12px -11px rgba(0,0,0,0.69);
+    -moz-box-shadow: 7px 8px 12px -11px rgba(0,0,0,0.69);
+  }
+  
+.secondary-button{
+    color: $black-text-color;
+}

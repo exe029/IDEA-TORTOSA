@@ -16,7 +16,14 @@
             margin: 0 auto;
 
             .resume-card__img{
-                width: 520px;
+                width: 50%;
+                &::before{
+                    height:720px;
+                }
+            }
+
+            .resume-card__info{
+                width: 50%;
             }
         }
 
