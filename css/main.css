@@ -127,6 +127,39 @@ ul {
     .hero .hero__info .hero-info__title span {
       font-weight: 200; }
 
+.progress-bar {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15) inset;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15) inset;
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15) inset;
+  width: 100%;
+  height: 26px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  margin: 20px 0; }
+  .progress-bar__fill {
+    height: 100%;
+    animation: progress-bar 2s ease forwards reverse;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; }
+    .progress-bar__fill span {
+      font-size: 0.9rem; }
+  .progress-bar:nth-child(1) .progress-bar__fill {
+    width: 90%;
+    background-color: #171717; }
+  .progress-bar:nth-child(2) .progress-bar__fill {
+    width: 95%;
+    background-color: #171717; }
+  .progress-bar:nth-child(3) .progress-bar__fill {
+    width: 85%;
+    background-color: #171717; }
+
+@keyframes progress-bar {
+  to {
+    width: 0%; } }
+
 .resume-container {
   padding: 60px 20px;
   min-height: 100vh;
@@ -193,6 +226,53 @@ ul {
         color: #444444; }
         .resume-container .resume-card .resume-card__info .info__text-box p span {
           font-weight: 600; }
+      .resume-container .resume-card .resume-card__info .skills {
+        margin: 40px 0; }
+
+.web-service {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 60px auto;
+  padding: 0 15px;
+  position: relative; }
+  .web-service__img {
+    width: 100%;
+    height: 655px; }
+    .web-service__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-fit: contain; }
+    @media screen and (min-width: 1024px) {
+      .web-service__img {
+        width: 45%;
+        position: relative;
+        top: -100px; } }
+  .web-service__info {
+    max-width: 500px;
+    margin: 0 auto; }
+    .web-service__info .info__service-text-box h5 {
+      color: #3D2C8D;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .web-service__info .info__service-text-box h2 {
+      font-size: 2rem;
+      font-weight: 700; }
+    .web-service__info .info__service-text-box p {
+      color: #444444; }
+      .web-service__info .info__service-text-box p span {
+        font-weight: 600; }
+    @media screen and (min-width: 1024px) {
+      .web-service__info {
+        width: 48%; } }
+  @media screen and (min-width: 1024px) {
+    .web-service {
+      margin: 0 auto; } }
 
 .primary-button {
   background-color: #3D2C8D;
@@ -208,8 +288,7 @@ ul {
 .form-container {
   width: 100%;
   padding: 20px;
-  background-color: #FFFFFF;
-  min-height: 100vh;
+  background-color: #9e9e9e;
   margin: 120px 0; }
   .form-container h2 {
     text-align: center; }
@@ -385,58 +464,7 @@ footer .icon {
   grid-area: main;
   position: relative; }
 
-.resume-container__perfil-image {
-  width: 300px;
-  height: 340px;
-  border-radius: 20px;
-  overflow: hidden; }
-
-.resume-container__perfil-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
-.resume-container__description {
-  background-color: #FFFFFF;
-  max-width: 600px;
-  padding: 40px 20px;
-  border-radius: 20px; }
-
-/*bio*/
-.bio-container {
-  min-height: calc(100vh - 160px); }
-  .bio-container .hero-container--bio {
-    height: 400px;
-    width: 100%;
-    background-image: url(https://images.pexels.com/photos/261579/pexels-photo-261579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    padding-top: 150px; }
-    .bio-container .hero-container--bio__title {
-      color: #FFFFFF;
-      font-size: 3.4rem;
-      font-family: 'Estonia', cursive;
-      font-family: 'Red Hat Display', sans-serif; }
-
-.hero-container--bio__paragraph {
-  color: black-text-color;
-  text-align: center;
-  padding: 60px 10px;
-  font-size: 1.5rem;
-  font-family: 'Estonia', cursive;
-  font-family: 'Red Hat Display', sans-serif; }
-
 /*hobbies*/
-.hero-container--hobbies {
-  height: 400px;
-  width: 100%;
-  background-image: url(https://circulotne.com/wp-content/uploads/2019/05/hobbies-para-mejorar-concentraci%C3%B3n.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
 .carousel-item {
   height: 65vh;
   min-height: 300px;
@@ -451,47 +479,29 @@ footer .icon {
   background-color: rgba(0, 0, 0, 0.5); }
 
 /*service*/
-.hero-container--service {
-  height: 550px;
-  width: 100%;
-  background-image: url(https://images.pexels.com/photos/6893373/pexels-photo-6893373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  background-size: cover;
-  background-position: top;
-  text-align: center; }
-
-.hero-container--service__title {
-  color: white;
-  font-size: 3.4rem;
-  font-family: 'Estonia', cursive;
-  font-family: 'Red Hat Display', sans-serif; }
-
-.service-info {
-  color: black-text-color;
-  text-align: center;
-  padding: 60px 10px;
-  font-size: 1.2rem;
-  font-family: 'Estonia', cursive;
-  font-family: 'Red Hat Display', sans-serif; }
-
-/*contact*/
-.bg-img-container {
-  width: 100%;
-  position: relative; }
-
-.bg-img-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
-.bg-img-container::after {
-  content: "";
-  height: 100%;
-  display: inline;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(86, 37, 40, 0.5); }
+.address-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; }
+  .address-container__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 3.2rem;
+    transition: all 250ms ease; }
+    .address-container__icon:hover {
+      background-color: #171717;
+      color: #f4f4f4; }
+  .address-container h5 {
+    font-size: 1.4rem; }
+  .address-container p {
+    color: #444444;
+    text-align: center; }
 
 .container-footer {
   grid-area: footer;

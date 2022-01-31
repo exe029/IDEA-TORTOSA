@@ -1,71 +1,8 @@
   .main-container{
       grid-area:main;
-      position: relative;
-      
-  }
-  
-  
-  
-  .resume-container__perfil-image{
-    width:300px;
-    height: 340px;
-    border-radius:20px;
-    overflow: hidden;
-  }
-  
-  .resume-container__perfil-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .resume-container__description{
-    background-color: $just-white;
-    max-width: 600px;
-    padding:40px 20px;
-    border-radius:20px;
-  }
-
-  /*bio*/
-  .bio-container{
-    min-height:calc(100vh - 160px);
-    .hero-container--bio {
-      height: 400px;
-      width: 100%;
-      background-image: url(https://images.pexels.com/photos/261579/pexels-photo-261579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      text-align: center;
-      padding-top: 150px;
-      &__title {
-        color: $just-white;
-        font-size: 3.4rem;
-        font-family: 'Estonia', cursive;
-        font-family: 'Red Hat Display', sans-serif;
-      }
-    }
-  }
-  
-  .hero-container--bio__paragraph{
-    color: black-text-color;
-    text-align: center;
-    padding: 60px 10px;
-    font-size: 1.5rem;
-    font-family: 'Estonia', cursive;
-    font-family: 'Red Hat Display', sans-serif;
+      position: relative;    
   }
 /*hobbies*/
-
-  .hero-container--hobbies {
-    height: 400px;
-    width: 100%;
-    background-image: url(https://circulotne.com/wp-content/uploads/2019/05/hobbies-para-mejorar-concentraci%C3%B3n.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
   .carousel-item {
     height: 65vh;
     min-height: 300px;
@@ -81,81 +18,32 @@
   }
 
   /*service*/
-  .hero-container--service {
-    height: 550px;
-    width: 100%;
-    background-image: url(https://images.pexels.com/photos/6893373/pexels-photo-6893373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-size: cover;
-    background-position:top;
-    text-align: center;
-  }
-  
-  .hero-container--service__title {
-    color:white;
-    font-size: 3.4rem;
-    font-family: 'Estonia', cursive;
-    font-family: 'Red Hat Display', sans-serif;
-  }
-  .service-info {
-    color: black-text-color;
-    text-align: center;
-    padding: 60px 10px;
-    font-size: 1.2rem;
-    font-family: 'Estonia', cursive;
-    font-family: 'Red Hat Display', sans-serif;
-  }
 
-  /*contact*/
-  // .hero-container--contact{
-  //   background-color: rgba(0, 0, 0, 0.829);
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   padding: 50px 15px;
-  //   text-align: center;
-  //   position: relative;
-  //   &__message{
-  //     max-width:320px;
-  //     margin-bottom: 10px; 
-  //     position: absolute;
-  //     display: inline-block;
-  //     margin-top: -55%; 
-  //     .contact-title{
-  //       font-size: 2.5rem;
-  //       font-family: 'Estonia', cursive;
-  //       font-family: 'Red Hat Display', sans-serif;
-  //       color: $just-white;
-  //     }
+  .address-container{
+    @include flexColumnHVcenter;
+    gap:10px;
+    &__icon{
+      @include flexRowHVcenter;
+      width:60px;
+      height:60px;
+      border-radius: 50%;
+      font-size: 3.2rem;
+      transition: all 250ms ease;
       
-  //     .contact-paragraph{
-  //       font-size: 1.5rem;
-  //       font-family: 'Estonia', cursive;
-  //       font-family: 'Red Hat Display', sans-serif;
-  //       color: $just-white;
-  //     }
-  //   }
-  // }
-  
-  .bg-img-container{
-    width: 100%;
-    position: relative;
+      &:hover{
+        background-color:$black-text-color;
+        color:$litle-white;
+      }
+    }
+
+    h5{
+      font-size:1.4rem;
+    }
+
+    p{
+      color:$grey-text-color;
+      text-align: center;
+    }
+
   }
-  
-  .bg-img-container img{
-    width: 100%;
-    height: 100%; 
-    object-fit: cover; 
-  }
-  
-  .bg-img-container::after{
-    content: "";
-    height: 100%;
-    display: inline;
-    width: 100%;
-    position: absolute;
-    top:0;
-    left:0;
-    background-color: hsla(356, 40%, 24%, 0.5);
-  }
-  
  

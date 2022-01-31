@@ -2,17 +2,17 @@
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
 
-
 /*base*/
 @import "./base/resets";
 @import "./base/base";
-
 
 /*components*/
 @import "./components/nav-bar-desktop";
 @import "./components/nav-bar-mobile";
 @import "./components/hero";
-@import "./components/resume-container"; 
+@import "./components/progressBar";
+@import "./components/resume-container";
+@import "./components/service-web"; 
 @import "./components/buttons";
 @import "./components/contact-form";
 
@@ -25,7 +25,6 @@
 /*medias*/
 @import "./components/medias";
    
-
 /*layout*/
 @import "./layout/header";    
 @import "./layout/main";
